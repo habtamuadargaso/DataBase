@@ -1,7 +1,6 @@
 # DataBase
 
-Click Create a new SQL tab button to create a new tab.  Copy the script below into the MySQL 
-Workbench. Execute the script to create the AP (Accounts Payable) database.
+Copy the script below into the MySQL Workbench Execute the script to create the AP (Accounts Payable) database.
 
 
 ```-- create the database
