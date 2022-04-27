@@ -9,31 +9,38 @@ DROP DATABASE IF EXISTS ap;
 CREATE DATABASE ap;
 ```
 
+
+
 ```
 -- select the database
 USE ap;
 ```
 
+
+
+
+```
 -- create the tables
 CREATE TABLE general_ledger_accounts
 (
   account_number        INT            PRIMARY KEY,
   account_description   VARCHAR(50)    UNIQUE );
+```  
   
   
   
-  
-  
+```  
   CREATE TABLE terms
 (
   terms_id              INT            PRIMARY KEY   AUTO_INCREMENT,
   terms_description     VARCHAR(50)    NOT NULL,
   terms_due_days        INT            NOT NULL
 );
+```
 
 
 
-
+```
 CREATE TABLE vendors
 (
   vendor_id                     INT            PRIMARY KEY   AUTO_INCREMENT,
@@ -55,10 +62,12 @@ CREATE TABLE vendors
     FOREIGN KEY (default_account_number)
     REFERENCES general_ledger_accounts (account_number)
 );
+```
 
 
 
 
+```
 CREATE TABLE invoices
 (
   invoice_id            INT            PRIMARY KEY   AUTO_INCREMENT,
@@ -78,10 +87,11 @@ CREATE TABLE invoices
     FOREIGN KEY (terms_id)
     REFERENCES terms (terms_id)
 );
+```
 
 
 
-
+```
 CREATE TABLE invoice_line_items
 (
   invoice_id              INT            NOT NULL,
@@ -98,13 +108,20 @@ CREATE TABLE invoice_line_items
     FOREIGN KEY (account_number)
     REFERENCES general_ledger_accounts (account_number)
 );
+```
 
 
+
+```
 -- create the indexes
 CREATE INDEX invoices_invoice_date_ix
   ON invoices (invoice_date DESC);
-  
-  
+```  
+
+
+
+
+```  
   -- create some test tables that aren't explicitly
 -- related to the previous five tables
 CREATE TABLE vendor_contacts
@@ -113,6 +130,10 @@ CREATE TABLE vendor_contacts
   last_name       VARCHAR(50)  NOT NULL,
   first_name      VARCHAR(50)  NOT NULL
 );
+```
+
+
+
 
 ```
 CREATE TABLE invoice_archive
