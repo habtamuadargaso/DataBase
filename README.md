@@ -4,13 +4,15 @@ Click Create a new SQL tab button to create a new tab.  Copy the script below in
 Workbench. Execute the script to create the AP (Accounts Payable) database.
 
 
--- create the database
+```-- create the database
 DROP DATABASE IF EXISTS ap;
 CREATE DATABASE ap;
+```
 
+```
 -- select the database
 USE ap;
-
+```
 
 -- create the tables
 CREATE TABLE general_ledger_accounts
