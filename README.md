@@ -153,11 +153,9 @@ CREATE TABLE invoice_archive
 
 
 
-step #2 
+step #2  INSERT VALUES IN TABLE 
 
-INSERT VALUES IN TABLE 
-
-'''
+```
 INSERT INTO general_ledger_accounts VALUES 
 (100,'Cash'), 
 (110,'Accounts Receivable'), 
@@ -234,7 +232,7 @@ INSERT INTO general_ledger_accounts VALUES
 (630,'Federal Corporation Income Taxes'), 
 (631,'State Corporation Income Taxes'), 
 (632,'Sales Tax');
-'''
+```
 
 
 
