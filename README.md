@@ -111,6 +111,8 @@ CREATE TABLE vendor_contacts
   last_name       VARCHAR(50)  NOT NULL,
   first_name      VARCHAR(50)  NOT NULL
 );
+
+```
 CREATE TABLE invoice_archive
 (
   invoice_id          INT          NOT NULL,
@@ -124,5 +126,5 @@ CREATE TABLE invoice_archive
   invoice_due_date    DATE         NOT NULL,
   payment_date        DATE
 );
-
+```
 
