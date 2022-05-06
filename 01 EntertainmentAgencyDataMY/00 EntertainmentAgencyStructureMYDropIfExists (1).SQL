@@ -1,8 +1,8 @@
 DROP DATABASE IF EXISTS EntertainmentAgencyExample;
 CREATE DATABASE EntertainmentAgencyExample;
-
+ 
 use EntertainmentAgencyExample;
-
+--- create table
 CREATE TABLE Agents (
         AgentID int NOT NULL ,
         AgtFirstName nvarchar (25) NULL ,
