@@ -1,5 +1,4 @@
 # DataBase
-
 Copy the script below into the MySQL Workbench Execute the script to create the AP (Accounts Payable) database.
 
 
